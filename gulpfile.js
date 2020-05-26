@@ -47,8 +47,7 @@ gulp.task('script', function(){
 
 gulp.task('js', function(){
   return gulp.src([
-    'assest/js/mask.js',
-    'assest/js/swiper.js',
+    'assest/js/jquery.touchSwipe.min.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

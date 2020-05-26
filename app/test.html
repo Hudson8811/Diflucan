@@ -61,56 +61,70 @@
         </div>
        </header>
        <main class="main">
-        <div class="test-hero">
-          <div class="container">
-            <img src="img/test-hero-title.svg" alt="" class="test-hero__title">
-            <p class="test-hero__text">
-              Покупать модные вещи в начале сезона или ждать распродаж? Охотиться за промокодами или стойко игнорировать специальные предложения? Посещать врачей по первому чиху или обходиться экономными народными средствами? Что выберете Вы? Пройдите наш тест и узнайте, известны ли Вам все тонкости правильной экономии. 
-            </p>
+            <div class="test-hero">
+              <div class="container">
+                <img src="img/test-hero-title.svg" alt="" class="test-hero__title">
+                <p class="test-hero__text">
+                  Покупать модные вещи в начале сезона или ждать распродаж? Охотиться за промокодами или стойко игнорировать специальные предложения? Посещать врачей по первому чиху или обходиться экономными народными средствами? Что выберете Вы? Пройдите наш тест и узнайте, известны ли Вам все тонкости правильной экономии.
+                </p>
 
-          </div>
-        </div>
-        
-      	<div class="index__test">
-        
-          <div class="test__inner">
-              <div class="arr-left"></div>
-              <div class="arr-right"></div>
-
-              <div class="test__button left">
-                  <img src="images/head-l.png" alt="">
               </div>
+            </div>
+        
+            <div class="test__inner">
+                <div class="test__question">
+                    <div class="test__counter">
+                        <div class="test__counter-current"></div>/<div class="test__counter-total"></div>
+                    </div>
+                    <div class="test__question-test">Будете ждать <span>распродажу</span> или купите вещи в <span>начале сезона</span>?</div>
+                </div>
 
-              <div class="test__cards"></div>
+                <div class="test__swiper-section">
+                    <div class="test__left">
+                        <div class="img">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="test__right">
+                        <div class="img">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="test__center">
+                        <img src="images/swiper.png" alt="">
+                    </div>
+                    <div class="test__info">Отвечать можно стрелочками <br>клавиатуры ← влево и вправо →, <br>выбирать мышкой или свайпить</div>
+                </div>
 
-              <div class="test__button right">
-                  <img src="images/head-r.png" alt="">
-              </div>
-          </div>
-      </div>
+                <div class="test__otvets">
+                    <div class="test__status-row">
+                        <div class="test__status"></div>
+                        <div class="test__status-line"></div>
+                        <a href="javascript:;" class="test__next-question js-test-next">ДАЛЕЕ</a>
+                    </div>
+                    <div class="test__otvet"></div>
+                </div>
+            </div>
+
+           <div class="test__results">
+               <div class="test__result-title"></div>
+               <div class="test__result-text"></div>
+           </div>
        </main>
-       <footer class="footer footer--second">
+
+       <footer class="footer footer--test">
         <div class="container">
          <div class="footer__row">
-           <img class="footer__decor" src="img/footer-second-decor.svg" alt="">
-          <a href="#" class="footer__link footer__link--desktop">
-            <img class="footer__link-text" src="img/footer-text.svg" alt="" >
-            <img src="img/footer-img.svg" alt="" class="footer__image">
-            <span class="button">
-              ПРЯМО СЕЙЧАС
-            </span>
-          </a>
-          <a href="#" class="footer__link footer__link--right footer__link--mobile">
-            <img src="img/mobile-img.svg" alt="">
-          </a>
+           <img class="footer__decor--test" src="images/footer_test_image.svg" alt="">
+          <div class="">
+            <img src="img/footer-img.svg" alt="" class="footer__image--test">
+          </div>
          </div>
-         <p class="footer__text">
-          ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ НЕОБХОДИМО ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ
-         </p>
         </div>
        </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
