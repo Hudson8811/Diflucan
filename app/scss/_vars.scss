@@ -1,0 +1,62 @@
+$white:#fff;
+$black:#000;
+$purple:#860064;
+$purple2:#6A489C;
+$pink:#ED057D;
+$resolution: 1920;
+$resolution2: 320;
+$Coco:'Cocosignum Maiuscoletto', sans-serif;
+$MyRiad:'Myriad Pro', sans-serif;
+$EB:'EB Garamond', serif;
+
+$breakpoints: (
+        lg: 1920,
+        md: 1024,
+        sm: 780
+) !default;
+$media-direction: max !default;
+@function vw($px) {
+  @return (($px/$resolution) * 100)+vw;
+}
+
+@function vw2($px) {
+  @return (($px/$resolution2) * 100)+vw;
+}
+@mixin for-xl {
+    @media (max-width: 1300px) { @content; }
+  }
+
+@mixin for-lg {
+    @media (max-width: 1200px) { @content; }
+  }
+  @mixin for-lit-desktop {
+    @media (max-width: 1050px) { @content; }
+  }
+  @mixin for-md-desktop{
+    @media (min-width: 1025px) { @content; }
+  }
+  @mixin for-md {
+    @media (max-width: 1024px) { @content; }
+  }
+  @mixin for-lit-md {
+    @media (max-width: 850px) { @content; }
+  }
+  @mixin for-sm {
+    @media (max-width: 768px) { @content; }
+  }
+  @mixin for-tiny-tablet {
+    @media (max-width: 650px) { @content; }
+  }
+  @mixin for-md-mob{
+    @media (max-width: 550px) { @content; }
+  }
+  @mixin for-tiny-mob {
+    @media (max-width: 500px) { @content; }
+  }
+
+  @mixin for-min-mob {
+    @media (min-width: 650px) { @content; }
+  }
+  @mixin for-lit-mob {
+    @media (max-width: 350px) { @content; }
+    }
