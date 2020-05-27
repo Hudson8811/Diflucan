@@ -140,7 +140,6 @@ header{
 }
 .header{
     position: relative;
-    z-index: 2;
     padding: vw(40) 0;
     @include for-md(){
         padding: vw2(20) 0;
@@ -229,6 +228,9 @@ header{
     &__list-item{
         margin-top: 65px;
     }
+    .mobile__link{
+        display: block;
+    }
     &__link-img{
         max-width: 100%;
     }
@@ -277,6 +279,32 @@ header{
 
     @include for-md(){
         padding: vw2(15) 0 vw2(40);
+    }
+
+    &__scroll{
+        display: block;
+        cursor: pointer;
+        margin: vw(30) auto vw(50);
+        height: vw(48);
+        width: vw(48);
+
+        @include for-md(){
+            display: none;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+
+        transition: .3s;
+        animation: spin 2s infinite linear;
+
+        &:hover{
+            animation-play-state: paused;
+        }
+
+        
     }
 
     &:after{
@@ -420,6 +448,16 @@ header{
 
         @include for-md(){
             max-height: vw2(10);
+        }
+    }
+
+    &__link-mobile{
+        display: none;
+        @include for-md(){
+            display: block;
+            margin: 0 auto vw2(20);
+            width: vw2(100);
+            height: vw2(60);
         }
     }
 
@@ -708,6 +746,7 @@ header{
             width: 100%;
             position: absolute;
             bottom: 0;
+            left: 0;
         }
         &.stage-2{
             padding-top: vw(770);
@@ -720,6 +759,7 @@ header{
                 bottom: 0;
                 left: 0;
                 width: 100%;
+                display: none;
             }
         }
         .hided{
@@ -733,6 +773,9 @@ header{
             bottom: vw(187);
             width: vw(97);
             height: vw(225);
+            @include for-md(){
+                display: none;
+            }
         }
         .footer__results-right{
             position: absolute;
@@ -740,6 +783,9 @@ header{
             bottom: vw(212);
             width: vw(131);
             height: vw(438);
+            @include for-md(){
+                display: none;
+            }
         }
     }
 
@@ -867,6 +913,10 @@ header{
         height: vw(1215);
         background: url(../img/hero-promo-before.png) center center no-repeat;
         background-size: cover;
+        @include for-md(){
+            background: url(../img/promo-mobile.png) center center no-repeat;
+            height: 100%;
+        }
     }
     &__left{
         flex-shrink: 0;
@@ -1337,9 +1387,11 @@ header{
     @include for-md(){
         margin-top: vw2(30);
         padding-top: vw2(40);
+        background: url(../img/promo-mobile.png) center center no-repeat;
         background-position: center vw2(1600);
     }
 
+    
     .container{
         overflow: visible;
     }
@@ -1565,7 +1617,7 @@ header{
     position: relative;
 
     @include for-md(){
-        padding: 9.198vw 0 vw2(40);
+        padding: vw2(16) 0 vw2(59);
     }
 
     &:before{
@@ -1576,6 +1628,11 @@ header{
         height: vw(1215);
         background: url(../img/hero-promo-before.png) center center no-repeat;
         background-size: cover;
+        @include for-md(){
+            height: 100%;
+            top: 0;
+            background: url(../img/promo-mobile.png) center center no-repeat;
+        }
     }
 
     &__title{
@@ -1584,12 +1641,24 @@ header{
         display: block;
         width: 100%;
         margin-bottom: vw(140);
+
+        @include for-md(){
+            margin-left: 0;
+            max-width: 100%;
+            margin-bottom: vw2(54);
+        }
     }
     &__text{
         margin: 0 auto;
         max-width: vw(852);
         font-weight: 300;
         color: #6A489C;
+
+        @include for-md(){
+            max-width: 100%;
+        }
+
+
     }
 }
 
@@ -1871,13 +1940,22 @@ header{
   &__inner {
     width: vw(1500);
     margin: 0 auto;
-  }
 
+    @include for-md(){
+        width: 100%;
+    }
+  }
+  
   &__question{
     display: flex;
     padding-left: vw(300);
+
+    @include for-md(){
+        flex-direction: column;
+        padding: 0;
+    }
     &-test{
-      font-family: EB Garamond;
+      font-family: $EB;
       font-style: normal;
       font-weight: normal;
       font-size: vw(60);
@@ -1886,10 +1964,17 @@ header{
       span{
         font-style: italic;
       }
+
+      @include for-md(){
+          font-size: vw2(29);
+          line-height: vw2(23.5);
+          max-width: vw2(272);
+          margin: vw2(10) auto;
+      }
     }
   }
   &__counter{
-    font-family: EB Garamond;
+    font-family: $EB;
     font-style: italic;
     font-weight: normal;
     font-size: vw(120);
@@ -1897,6 +1982,14 @@ header{
     display: flex;
     align-items: center;
     margin-right: vw(30);
+
+    @include for-md(){
+        margin: 0 auto;
+        font-size: vw2(60);
+        line-height: vw2(60);
+        padding-right: vw2(15);
+        box-sizing: border-box;
+    }
     &-current{}
     &-total{}
   }
@@ -1908,6 +2001,10 @@ header{
     align-items: center;
     justify-content: space-between;
     margin-top: vw(20);
+
+    @include for-md(){
+        height: vw2(230);
+    }
   }
   &__left,
   &__right{
@@ -1916,6 +2013,10 @@ header{
     height: 100%;
     width: 42%;
     user-select: none;
+
+    // @include for-md(){
+    //     width: 50%;
+    // }
     .img{
       height: 100%;
       display: flex;
@@ -1938,6 +2039,10 @@ header{
           left: 50%;
           top: 50%;
           transform: translateX(-50%) translateY(-50%);
+          @include for-md(){
+              width: vw2(55);
+              height: vw2(55);
+          }
         }
       }
 
@@ -1964,6 +2069,11 @@ header{
     pointer-events: none;
     user-select: none;
       width: vw(150);
+
+      @include for-md(){
+          width: vw2(48);
+          top: vw2(115);
+      }
     img{
       width: 100%;
       display: block;
@@ -1976,7 +2086,7 @@ header{
     left: 50%;
     transform: translateX(-50%);
     top: vw(515);
-    font-family: Myriad Pro;
+    font-family: $MyRiad;
     font-style: normal;
     font-weight: 300;
     font-size: vw(19);
@@ -1985,9 +2095,18 @@ header{
     color: #6A489C;
     pointer-events: none;
     user-select: none;
+
+    @include for-md(){
+        top: auto;
+        bottom: 0;
+        font-size: vw2(6.5);
+        line-height: vw2(7);
+        margin-bottom: vw2(-30);
+    }
   }
 
   &__otvets{
+    
     display: none;
     width: vw(980);
     margin: vw(35) auto 0;
@@ -1997,18 +2116,48 @@ header{
     &.active{
       display: block;
     }
+
+   
+
+    
+
+    @include for-md(){
+        position: fixed;
+        left: 0;
+        margin: 0;
+        transform: none;
+        bottom: 0;
+        width: 100%;
+        height: 90%;
+        z-index: 1000;
+        background: url(../img/result-quest-mobile.png) no-repeat center top;
+        background-size: cover;
+    }
   }
   &__status-row{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include for-md(){
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        box-sizing: border-box;
+        padding-bottom: vw2(48);
+    }
   }
   &__status{
-    font-family: EB Garamond;
+    font-family: $EB;
     font-style: normal;
     font-weight: normal;
     font-size: vw(120);
     color: #ED057D;
+    @include for-md(){
+        font-size: vw(350);
+        line-height: vw(340);
+        margin-bottom: vw2(20);
+    }
   }
   &__status-line{
     flex-grow: 1;
@@ -2017,9 +2166,12 @@ header{
     background: #ED057D;
     margin: 0 vw(50);
     transform: translateY(vw(15));
+    @include for-md(){
+        display: none;
+    }
   }
   &__next-question{
-    font-family: Cocosignum Maiuscoletto;
+    font-family: $Coco;
     font-style: normal;
     font-weight: normal;
     font-size: vw(36);
@@ -2032,10 +2184,17 @@ header{
     align-items: center;
     justify-content: center;
     margin-top: vw(20);
+
+    @include for-md(){
+        font-size: vw2(18);
+        height: vw2(39);
+        width: vw2(184);
+        border-radius: vw2(20);
+    }
   }
   &__otvet{
     margin: vw(50) auto 0;
-    font-family: Myriad Pro;
+    font-family: $MyRiad;
     font-style: normal;
     font-weight: 300;
     font-size: vw(27);
@@ -2043,9 +2202,52 @@ header{
     color: #6A489C;
     width: vw(855);
 
+    &--desktop{
+        @include for-md(){
+            display: none;
+        }
+    }
+    &--mobile{
+        visibility: hidden;
+        height: 0;
+        position: relative;
+        overflow: hidden;
+        @include for-md(){
+            visibility: visible;
+            height: auto;
+            position: static;
+
+        }
+    }
+
+    @include for-md(){
+        font-size: vw(69);
+        line-height: vw(90);
+        width: 100%;
+        margin: 0;
+        margin-bottom: vw2(20);
+        box-sizing: border-box;
+        padding: 0 vw2(23);
+    }
+
   }
 
   &__results{
+    .container{
+        overflow: visible;
+    }
+    .social{
+        &__title{
+            @include for-md(){
+                display: none;
+            }
+        }
+        &__block{
+            @include for-md(){
+                display: none;
+            }
+        }
+    }
     display: none;
       &-titles{
           display: flex;
@@ -2057,17 +2259,37 @@ header{
           width: vw(195);
           height: vw(276);
           margin-right: vw(44);
+          @include for-md(){
+              display: none;
+          }
       }
       &-titles-row{
+
+        @include for-md(){
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                left: vw2(-35);
+                top: vw2(-60);
+                background: url(../img/result-mobile.svg) no-repeat left top;
+                background-size: contain;
+                height: vw2(140);
+                width: vw2(75);
+            }
+        }
           img{
               display: inline-block;
               width: vw(158);
               height: vw(47);
               margin-left: vw(20);
+              @include for-md(){
+                  display: none;
+              }
           }
       }
       &-title{
-          font-family: EB Garamond;
+          font-family: $EB;
           font-style: normal;
           font-weight: normal;
           font-size: vw(120);
@@ -2076,11 +2298,18 @@ header{
           span{
               font-style: italic;
           }
+          @include for-md(){
+              font-size: vw2(44);
+              line-height: vw2(30);
+          }
       }
 
       &-row{
           margin-top: vw(171);
           display: flex;
+          @include for-md(){
+              flex-direction: column-reverse;
+          }
       }
       &-left{
           margin-right: vw(84);
@@ -2089,9 +2318,12 @@ header{
       &-right{
           margin-top: vw(28);
           width: vw(830);
+          @include for-md(){
+              width: 100%;
+          }
       }
       &-text{
-          font-family: Myriad Pro;
+          font-family: $MyRiad;
           font-style: normal;
           font-weight: 300;
           font-size: vw(27);
@@ -2099,6 +2331,12 @@ header{
           color: #6A489C;
           p+p{
               margin-top: 1em;
+          }
+
+          @include for-md(){
+              font-size: vw(80);
+              line-height: vw(90);
+              width: 100%;
           }
       }
   }
@@ -2108,7 +2346,7 @@ header{
     text-align: center;
     margin-top: vw(100);
     &__title{
-        font-family: Cocosignum Maiuscoletto;
+        font-family: $Coco;
         font-style: normal;
         font-weight: normal;
         font-size: vw(36);
@@ -2139,3 +2377,14 @@ header{
         }
     }
 }
+@keyframes spin {
+    0% {
+      transform: translate3d(0, -50%, 0);
+    }
+    50% {
+      transform: translate3d(0, 50%, 0);
+    }
+    100% {
+      transform: translate3d(0, -50%, 0);
+    }
+  }

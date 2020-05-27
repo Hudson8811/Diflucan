@@ -16,16 +16,16 @@
             </div>
             <nav class="main-menu header__main-menu">
               <ul class="main-menu__list">
-                <li class="main-menu__list-item"><a href="#" class="main-menu__link">
+                <li class="main-menu__list-item"><a href="#main" class="main-menu__link">
                   Главная
                 </a></li>
-                <li class="main-menu__list-item"><a href="#" class="main-menu__link">
+                <li class="main-menu__list-item"><a href="#shoping" class="main-menu__link">
                   Шопинг
                 </a></li>
-                <li class="main-menu__list-item"><a href="#" class="main-menu__link">
+                <li class="main-menu__list-item"><a href="#nutrition" class="main-menu__link">
                   Питание
                 </a></li>
-                <li class="main-menu__list-item"><a href="#" class="main-menu__link">
+                <li class="main-menu__list-item"><a href="#health" class="main-menu__link">
                   Здоровье
                 </a></li>
                 <li class="main-menu__list-item"><a href="#" class="main-menu__link">
@@ -50,9 +50,9 @@
               <img src="img/mobile-menu/text.svg" alt="" class="mobile-menu__image">
               <nav class="mobile-menu__nav">
                 <ul class="mobile-menu__list">
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/health.svg" alt="" class="mobile__link-image"> </a></li>
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/shoping.svg" alt="" class="mobile__link-image"> </a></li>
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/nutrition.svg" alt="" class="mobile__link-image"> </a></li>
+                  <li class="mobile-menu__list-item"><a href="#health-mob" class="mobile__link"><img src="img/mobile-menu/health.svg" alt="" class="mobile__link-image"> </a></li>
+                  <li class="mobile-menu__list-item"><a href="#shoping-mob" class="mobile__link"><img src="img/mobile-menu/shoping.svg" alt="" class="mobile__link-image"> </a></li>
+                  <li class="mobile-menu__list-item"><a href="#nutrition" class="mobile__link"><img src="img/mobile-menu/nutrition.svg" alt="" class="mobile__link-image"> </a></li>
                   <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/economy.svg" alt="" class="mobile__link-image"> </a></li>
                 </ul>
               </nav>
@@ -60,11 +60,13 @@
           </div>
         </div>
        </header>
-       <main class="main">
+       <main class="main" id="main">
         <div class="hero">
         <div class="container">
           <img class="hero__image" src="img/Do_not_save.svg" alt="">
-
+          <span  class="hero__scroll">
+            <img src="images/mouse.svg" alt="">
+          </span>
           <div class="hero__row">
             <nav class="social hero__social">
               <ul class="social__list">
@@ -114,10 +116,11 @@
             </div>
             <img src="img/mobile-img.svg" alt="" class="hero__decor hero__decor--mobile">
           </div>
+         
         </div>
         </div>
         <!--end hero-->
-        <div class="double-section shoping double-section--desktop">
+        <div class="double-section shoping double-section--desktop" id="shoping">
           <img src="img/shoping-img.png" alt="" class="shoping__image">
           <div class="container">
            
@@ -160,7 +163,7 @@
         </div>
         <!--end shoping-->
 
-        <div class="double-section health double-section--mobile">
+        <div class="double-section health double-section--mobile" id="health-mob">
           <img class="health__image health__image--desktop" src="img/health-image.png" alt="" >
           <div class="container">
             
@@ -205,7 +208,7 @@
         </div>
         <!--end health-->
 
-        <div class="double-section shoping double-section--mobile">
+        <div class="double-section shoping double-section--mobile" id="shoping-mob">
           <img src="img/shoping-img.png" alt="" class="shoping__image shoping__image--desktop">
           <div class="container">
             <img src="img/shoping-img-mobile.png" alt="" class="shoping__image shoping__image--mobile">
@@ -247,7 +250,7 @@
           </div>
         </div>
         <!--end shoping-->
-        <div class="double-section nutrition">
+        <div class="double-section nutrition" id="nutrition">
           <img  class="nutrition__image nutrition__image--desktop" src="img/nutrition-img.png" alt="">
           <div class="container">
             <img  class="nutrition__image nutrition__image--mobile" src="img/nutrition-img-mobile.png" alt="">
@@ -288,7 +291,7 @@
           </div>
         </div>
         <!--end nutrition-->
-        <div class="double-section health double-section--desktop">
+        <div class="double-section health double-section--desktop" id="health">
           <img class="health__image" src="img/health-image.png" alt="" >
           <div class="container">
             <div class="double-section__title double-section__title--right-padding">
