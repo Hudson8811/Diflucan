@@ -65,7 +65,6 @@ function setResults(position,currentQuestion,quests,testResults){
     } else {
         $('.test__status').html('Неверно');
     }
-    console.log(position);
     if (position == 0) {
         $('.test__left').addClass('like')
     } else {
@@ -77,13 +76,13 @@ function showResults(testResults){
     $.getJSON('results.json', function(data) {
         var results = data;
         var $tmp = getMostFrequentElement(testResults)[0];
-        var title = results.results[$tmp].title;
-        var text = results.results[$tmp].text;
-
-        $('.test__result-title').html(title);
-        $('.test__result-text').html(text);
+        $('.test__results-title').html(results.results[$tmp].title);
+        $('.test__results-text').html(results.results[$tmp].text);
         $('.test__inner').hide();
         $('.test__results').show();
+        $('.footer--test .fixed-height').hide();
+        $('.footer--test .hided').show();
+        $('.footer--test').addClass('stage-2');
     });
 }
 
