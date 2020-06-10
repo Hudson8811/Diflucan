@@ -140,7 +140,7 @@ header{
 }
 .header{
     position: relative;
-    z-index: 2;
+    z-index: 5000;
     padding: vw(40) 0;
     @include for-md(){
         padding: vw2(20) 0;
@@ -213,7 +213,23 @@ header{
         box-sizing: border-box;
         padding: vw2(20) vw2(23) vw2(25);
     }
-
+    &__name{
+        margin: vw3(86) 0 vw3(46);
+        font-size: vw3(56);
+        line-height: vw(48);
+        color: $white;
+        font-family: $EB;
+    }
+    .footer__about-text{
+        text-align: left;
+        color: $white;
+    }
+    .footer-inside__text{
+        margin-top: vw3(21);
+        font-size: vw3(26);
+        line-height: vw3(25);
+        color: rgba($white, 0.65);
+    }
     &__header{
         position: relative;
         margin-bottom: vw2(45);
@@ -864,7 +880,16 @@ header{
         padding-top: vw(270);
         margin-top: vw(-300);
         z-index: -1;
+        
         position: relative;
+
+        .footer-inside__text{
+            margin-top: vw(35);
+        }
+
+        .container{
+            overflow: visible;
+        }
         .footer__row{
             align-items: flex-end;
             width: 100%;
@@ -917,6 +942,8 @@ header{
         width: vw(128);
         height: vw(371);
         &--test{
+            position: absolute;
+            top: -100px;
             width: vw(271);
             height: vw(452);
         }
@@ -2606,11 +2633,13 @@ header{
         }
     }
     &--mobile{
+        width: 0;
         visibility: hidden;
         height: 0;
         position: relative;
         overflow: hidden;
         @include for-md(){
+            width: auto;
             visibility: visible;
             height: auto;
             position: static;
@@ -3263,8 +3292,8 @@ header{
         }
     }
     &__title{
-        font-size: vw(144);
-        line-height: vw(114);
+        font-size: vw(122);
+        line-height: vw(104);
         color: $purple2;
         font-family: $EB;
         &--pink{
@@ -3287,7 +3316,7 @@ header{
         } 
     }
     &__text-container{
-        margin-top: vw(50);
+        margin-top: vw(35);
     }
     &__text{
         line-height: vw(48);
@@ -3441,8 +3470,8 @@ header{
     
 }
 .explanation-text{
-    font-size: vw(12);
-    line-height: vw(16);
+    font-size: vw(14);
+    line-height: vw(17);
     color: $light-purple;
     a{
         color: $light-purple; 
@@ -4018,4 +4047,10 @@ header{
   }
 
 
- 
+ .test__question-test{
+     sup{
+        top: 0;
+        position: relative;
+        line-height: 0;
+     }
+ }
