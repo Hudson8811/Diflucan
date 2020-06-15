@@ -119,9 +119,7 @@ header{
     display: flex;
     flex-direction: column;
     height: 100%;
-    @include for-md(){
-        overflow-x: hidden;
-    }
+    
 }
 .container{
     position: relative;
@@ -246,6 +244,8 @@ header{
         margin-top: 65px;
     }
     .mobile__link{
+        position: relative;
+        z-index: 10;
         display: block;
     }
     &__link-img{

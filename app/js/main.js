@@ -1,8 +1,7 @@
-$(".header__burger").click(function(){
-   $(this).toggleClass("active");
-   $(".mobile-menu").slideToggle();
-  });
 
+    
+  
+  
   $(function(){
     $('a[href^="#"]').on('click', function(event) {
       // отменяем стандартное действие
@@ -22,9 +21,17 @@ $(".header__burger").click(function(){
       */
     });
   });
+
+
+$(".header__burger").click(function(){
+   $(this).toggleClass("active");
+   $(".mobile-menu").slideToggle();
+  });
+
+
   $('.mobile__link').click(function(){
     var windowSize = $(window).width(); 
-    if(windowSize < 992){
+    if(windowSize < 1025){
       // $(".header__menu").slideToggle(300);
       $(".mobile-menu").slideToggle();
       $(".burger").removeClass("active");
