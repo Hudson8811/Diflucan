@@ -208,3 +208,7 @@ $(document).ready(function() {
 
  
  
+var wow = new WOW({
+    offset:       150, 
+});
+new WOW().init();

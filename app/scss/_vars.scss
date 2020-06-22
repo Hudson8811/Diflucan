@@ -19,9 +19,11 @@ $breakpoints: (
 ) !default;
 $media-direction: max !default;
 @function vw($px) {
-  @return (($px/$resolution) * 100)+vw;
+  @return (($px/$resolution) * 100) * 0.7 + vw;
 }
-
+@function vw-con($px) {
+  @return (($px/$resolution) * 100)  + vw;
+}
 @function vw2($px) {
   @return (($px/$resolution2) * 100)+vw;
 }

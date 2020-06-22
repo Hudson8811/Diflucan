@@ -8,8 +8,8 @@ html{
 body{
     height: 100%;
     font-family: $MyRiad;
-    font-size: vw(27);
-    line-height: vw(34);
+    font-size: vw-con(27);
+    line-height: vw-con(34);
     color: $purple2;
     position: relative;
     overflow-x: hidden;
@@ -123,8 +123,7 @@ header{
 }
 .container{
     position: relative;
-    overflow: hidden;
-    max-width: vw(1760);
+    max-width: vw-con(1760);
     margin: 0 auto;
     width: 100%;
     @include for-md(){
@@ -280,11 +279,11 @@ header{
         display: flex;
     }
     &__list-item + &__list-item{
-        margin-left: vw(18);
+        margin-left: vw-con(18);
     }
     &__link{
-        font-size: vw(24);
-        line-height: vw(27);
+        font-size: vw-con(24);
+        line-height: vw-con(27);
         color: $pink;
         font-weight: 300;
     }
@@ -386,7 +385,7 @@ header{
 
         @include for-md(){
             position: absolute;
-            bottom: vw2(-40);
+            bottom: vw2(-85);
             right: 0;
             margin: 0;
             height: vw2(125)
@@ -740,7 +739,7 @@ header{
     }
 }
 .footer{
-    background: url(../img/footer-bg-desktop.png) no-repeat center bottom;
+    background: url(../img/footer-bg-desktop.png) no-repeat center 0;
     background-size: cover;
 
    
@@ -808,9 +807,9 @@ header{
         }
     }
     &--second{
-        background: url(../img/footer-second.png) no-repeat center bottom;
+        background: url(../img/footer-second.png) no-repeat center 0;
         background-size: cover;
-        padding-top: vw(270);
+        padding-top: vw(350);
         margin-top: vw(-555);
         padding-bottom: vw(30);
     }
@@ -818,9 +817,9 @@ header{
 
     &--third{
         position: relative;
-        background: url(../images/footer-third-bg.jpg) no-repeat center bottom;
+        background: url(../images/footer-third-bg.jpg) no-repeat center 0;
         background-size: cover;
-        padding-top: vw(750);
+        padding-top: vw(770);
         margin-top: vw(-750);
         padding-bottom: vw(100);
 
@@ -854,7 +853,7 @@ header{
             top: vw(370);
             width: vw(845);
             height: vw(525);
-            right: vw(352);
+            right: vw-con(450);
             @include for-md(){
                 display: none;
             }
@@ -862,7 +861,7 @@ header{
     }
     &--four{
         position: relative;
-        background: url(../img/footer-four-bg.png) no-repeat center bottom;
+        background: url(../img/footer-four-bg.png) no-repeat center 0;
         background-size: cover;
         padding-top: vw(365);
         margin-top: vw(-365);
@@ -1122,7 +1121,7 @@ header{
     }
 
     &:before{
-        top: vw(-183);
+        top: vw(-350);
         content: '';
         position: absolute;
         width: 100%;
@@ -1172,7 +1171,9 @@ header{
 
     &__image{
         display: block;
-        margin-bottom: vw(17);
+        margin: 0 auto vw(17);
+        width: vw(581);
+        height: vw(424);
 
         @include for-md(){
             margin-bottom: vw2(12.5);
@@ -1215,9 +1216,9 @@ header{
         content: '';
         position: absolute;
         right: 0;
-        top: vw(210);
-        width: vw(919);
-        height: vw(791);
+        top: vw(100);
+        width: vw-con(919);
+        height: vw-con(800);
         background: url(../img/list-items/2.png) no-repeat center right;
         background-size: contain;
 
@@ -1231,9 +1232,9 @@ header{
         content: '';
         position: absolute;
         left: 0;
-        bottom: vw(-32);
-        width: vw(1052);
-        height: vw(694);
+        bottom: vw-con(-50);
+        width: vw-con(900);
+        height: vw-con(694);
         background: url(../img/list-items/3.png) no-repeat left center;
         background-size: contain;
 
@@ -1353,11 +1354,12 @@ header{
                 position: absolute;
                 left: 50%;
                 top: 50%;
-                width: vw(845);
-                height: vw(545);
+                width: vw-con(750);
+                height: vw-con(450);
                 transform: translate(-48%,-52%);
                 background: url(../img/list-items/1.png) center center no-repeat;
                 background-size: contain;
+                z-index: -1;
 
                 @include for-md(){
                     height: vw2(270);
@@ -1586,7 +1588,7 @@ header{
         &--very-big{
             font-size: vw(144);
             line-height: vw(92);
-            margin-bottom: vw(19);
+            margin-bottom: vw-con(35);
 
             @include for-md(){
                 margin-bottom: vw3(19);
@@ -1691,7 +1693,7 @@ header{
         position: absolute;
         width: vw(630);
         height: vw(507);
-        right: vw(-18);
+        right: vw-con(-34);
         top: 0;
     }
    &--after{
@@ -1699,8 +1701,8 @@ header{
         content: '';
         position: absolute;
         right: 0;
-        bottom: vw(1302);
-        width: vw(1176);
+        bottom: 38.46875vw;
+        width: 34.875vw;
         height: vw(702);
         background: url(../img/guides-after.png) no-repeat center right;
         background-size: contain;
@@ -1795,7 +1797,7 @@ header{
     &__decor-image{
         position: absolute;
         left: 0;
-        bottom: vw(418);
+        bottom: vw(300);
         width: vw(652);
         height: vw(1039);
         background: url(../img/guiides-container-img.png) no-repeat center left;
@@ -1808,7 +1810,7 @@ header{
     &__decor-image-2{
         position: absolute;
         left: 0;
-        bottom: vw(300);
+        bottom: 0;
         width: vw(593);
         height: vw(716);
 
@@ -1852,7 +1854,7 @@ header{
             margin-top: vw(-183);
         }
         &--negative-margin-big{
-            margin-top: vw(-280);
+            margin-top: vw(-200);
             @include for-md(){
                 margin-top: 0;
             }
@@ -1952,6 +1954,8 @@ header{
         }
     }
     &__value{
+        height: 100%;
+       
         margin: 0 auto;
     }
     &__title{
@@ -1994,8 +1998,8 @@ header{
     }
     &__text-explanation{
         margin-top: vw(10);
-        font-size: vw(12);
-        line-height: vw(17);
+        font-size: vw-con(12);
+        line-height: vw-con(17);
         color: $light-purple;
         @include for-md{
             font-size: vw3(15);
@@ -2007,8 +2011,8 @@ header{
         width: vw(730);
         height: vw(538);
         max-width: initial;
-        top: vw(-500);
-        right: vw(-73) ;
+        top: -16.22917vw;
+        right:-3.86146vw ;
         @include for-md(){
             width: vw3(500);
             height: vw3(538);
@@ -2020,9 +2024,9 @@ header{
     &__image-5{
         position: absolute;
         left: vw(-95);
-        top: vw(-500);
-        width: vw(788);
-        height: vw(492);
+        top: vw(-400);
+        width: vw(650);
+        height: vw(400);
 
         @include for-md(){
             position: static;
@@ -2045,11 +2049,11 @@ header{
     }
 
     &:before{
-        top: vw(-360);
+        top: vw(-600);
         content: '';
         position: absolute;
         width: 100%;
-        height: vw(1215);
+        height: vw(1700);
         background: url(../img/hero-promo-before.png) center center no-repeat;
         background-size: cover;
         @include for-md(){
@@ -2357,7 +2361,7 @@ header{
 }
 
 @function vw($px) {
-  @return (($px/1920) * 100)+vw;
+  @return (($px/1920) * 100) * 0.7 +vw;
 }
 
 
@@ -2811,7 +2815,7 @@ header{
         
     }
     &__left{
-        width: vw(800);
+        width: vw-con(800);
         padding-left: vw(95);
         @include for-md{
             padding: 0 vw3(30);
@@ -2918,8 +2922,8 @@ header{
         right: vw(-35);
 
         &--big{
-            height: vw(1603);
-            width: vw(1019);
+            height: vw(1800);
+            width: vw(1200);
         }
         @include for-md{
             display: none;
@@ -3163,12 +3167,13 @@ header{
             &:before{
                 content: '';
                 position: absolute;
-                width: vw(928);
-                height: vw(592);
-                left: vw(-148);
-                top: vw(-91);
+                width: vw-con(928);
+                height: vw-con(592);
+                left: vw-con(-148);
+                top: vw-con(-150);
                 background: url(../img/health-list-item-1.png) no-repeat left center;
                 background-size: contain;
+                z-index: -1;
 
                 @include for-md(){
                     width: 100%;
@@ -3182,12 +3187,13 @@ header{
             &:before{
                 content: '';
                 position: absolute;
-                width: vw(895);
-                height: vw(779);
-                right: vw(-80);
-                top: vw(-210);
+                width: vw-con(895);
+                height: vw-con(779);
+                right: vw-con(-80);
+                top: vw-con(-300);
                 background: url(../img/health-list-item-2.png) no-repeat left center;
                 background-size: contain;
+                z-index: -1;
 
               
 
@@ -3430,6 +3436,9 @@ header{
     }
     &__row{
         display: flex;
+        &--align-items-center{
+            align-items: center;
+        }
         @include for-md{
            flex-direction: column;
         }
@@ -3617,7 +3626,9 @@ header{
 
         
     }
-
+    &__img{
+        margin-top: vw-con(10);
+    }
     &--food3{
         &:before{
             content: '';
@@ -3630,11 +3641,20 @@ header{
             background-size: contain;
         }
     }
+    
     &__content{
         box-sizing: border-box;
 
         &--pl-left{
             padding-left: vw(55);
+        }
+        &--lh{
+            p{
+                line-height: vw(48);
+                @include for-md{
+                    line-height: vw3(48);
+                }
+            }
         }
 
         p{
@@ -3835,7 +3855,7 @@ header{
     z-index: 2;
     overflow: hidden;
     padding: vw(255) 0;
-    background: url(../images/food1-bg.jpg) no-repeat center vw(870);
+    background: url(../images/food1-bg.jpg) no-repeat center vw-con(150);
     background-size: contain;
 
     @include for-md(){
@@ -3984,10 +4004,10 @@ header{
             &::before{
                 content: '';
                 position: absolute;
-                right: vw(-72);
-                top: vw(55);
-                height: vw(689);
-                width: vw(825);
+                right: vw-con(-72);
+                top: vw(-20);
+                height: vw-con(600);
+                width: vw-con(800);
                 background: url(../images/advices-item-before.png) no-repeat top right;
                 background-size: contain;
 
