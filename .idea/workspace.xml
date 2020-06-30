@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c0fe7a9b-52f8-4f06-96b9-e4058bc79b0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/test/8_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/test/8_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/images/test/9_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/images/test/9_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/results.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/results.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/test.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +60,17 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>build</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="css" type="js.build_tools.gulp" temporary="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -92,6 +96,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gulp.js.default" />
+        <item itemvalue="Gulp.js.build" />
         <item itemvalue="Gulp.js.css" />
       </list>
     </recent_temporary>
@@ -107,7 +112,10 @@
       <option name="presentableId" value="Default" />
       <updated>1590500767671</updated>
       <workItem from="1590500768738" duration="12321000" />
-      <workItem from="1590564308530" duration="5583000" />
+      <workItem from="1590564308530" duration="5935000" />
+      <workItem from="1592486973812" duration="529000" />
+      <workItem from="1593425944271" duration="359000" />
+      <workItem from="1593514406632" duration="802000" />
     </task>
     <servers />
   </component>

@@ -105,7 +105,7 @@ $(document).ready(function() {
 
         $(".test__swiper-section").swipe( {
             swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-                if (!blocked && distance > 200) {
+                if (!blocked && distance > 200 && (direction == 'left' || direction == 'right')) {
                     blocked = true;
                     var position = 0;
                     if (direction == 'left'){
@@ -119,7 +119,30 @@ $(document).ready(function() {
             threshold:0
         });
 
+        $('.test__left').swipe( {
+            swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                if (!blocked && event.type === 'touchend' && direction === null) {
+                    blocked = true;
+                    var position = 0;
+                    setResults(position,currentQuestion,quests,testResults)
+                }
+            },
+            threshold:0
+        });
+
+        $('.test__right').swipe( {
+            swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                if (!blocked && event.type === 'touchend' && direction === null) {
+                    blocked = true;
+                    var position = 1;
+                    setResults(position,currentQuestion,quests,testResults)
+                }
+            },
+            threshold:0
+        });
+
         $('.test__left, .test__right').on('click touch',function () {
+
             if (!blocked) {
                 blocked = true;
                 var position = 0;
