@@ -60,6 +60,10 @@ header{
  .main{
     /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
     flex: 1 0 auto;
+    @include for-md(){
+        position: relative;
+        overflow: hidden;
+    }
  }
  footer{
     /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
@@ -2925,6 +2929,28 @@ header{
 }
 .hero-health{
     padding-top: vw(90);
+
+    &__description{
+        right: vw(200);
+        bottom: vw(200);
+        @include for-md(){
+           position: relative !important;
+           right: auto;
+           bottom: auto;
+           margin: vw3(50) auto vw3(25);
+        }
+    }
+    &__description-2{
+        right: vw(640);
+        top: vw(780);
+        @include for-md(){
+            position: relative !important;
+            right: auto;
+            bottom: auto;
+            top: auto;
+            margin: vw3(50) auto vw3(25);
+         }
+    }
     &__row{
         position: relative;
         
@@ -3050,6 +3076,8 @@ header{
             @include for-md{
                 display: block;
                 margin: 0 auto;
+                height: vw3(450);
+                width: auto;
             }
         }
     }
