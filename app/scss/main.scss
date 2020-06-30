@@ -296,7 +296,12 @@ header{
     @include for-md(){
         padding: vw2(15) 0 vw2(40);
     }
-
+    &__explanation-text{
+        margin-top: vw(30);
+        @include for-md(){
+            display: none;
+        }
+    }
     &__scroll{
         display: block;
         cursor: pointer;
@@ -617,7 +622,14 @@ header{
     }
 }
 .nutrition{
-
+    &__description{
+        right: 0;
+        top: vw(950);
+        @include for-md(){
+            top: vw3(485);
+            right: vw3(10);
+        }
+    }
     @include for-md(){
         padding-top: vw2(25);
     }
@@ -677,6 +689,11 @@ header{
 }
 
 .health{
+    &__description{
+        top: vw(55);
+        left: vw(44);
+        z-index: 10;
+    }
     padding-top: vw(72);
     padding-bottom: vw(188);
 
@@ -1112,6 +1129,19 @@ header{
         }
     }
 }
+.footer-index{
+    padding-bottom: vw3(20);
+    &__explanation-text{
+        display: none;
+        @include for-md(){
+            display: block;
+            margin-bottom: vw3(20);
+        }
+    }
+    .footer__about--mobile{
+        margin-top: 0;
+    }
+}
 .promo-hero{
     padding: vw(215) 0;
     position: relative;
@@ -1176,6 +1206,8 @@ header{
         height: vw(424);
 
         @include for-md(){
+            width: auto;
+            height: auto;
             margin-bottom: vw2(12.5);
         }
     }
@@ -1668,6 +1700,60 @@ header{
     padding-top: vw(77);
     background: url(../img/hero-promo-before.png) no-repeat  center vw(735);
     background-size: contain;
+
+    &__description-1{
+        top: vw(-200);
+        left: 0;
+        @include for-md(){
+            display: none;
+        }
+    }
+    &__description-2{
+        top: vw(80);
+        right: vw(300);
+        @include for-md(){
+            top: vw3(-10);
+            right: vw3(-40);
+        }
+    }
+    &__description-3{
+        top: vw(-30);
+        left: vw(200);
+        @include for-md(){
+            top: vw3(-150);
+           bottom: vw3(100);
+            left: 0;
+        }
+    }
+    &__description-4{
+        display: none;
+        top: vw(-200);
+        left: 0;
+        @include for-md(){
+            display: block;
+            top: vw3(0);
+        }
+    }
+    &__description-5{
+       
+        bottom: vw(200);
+        right: vw(200);
+        @include for-md(){
+            display: none;
+            top: vw3(0);
+        }
+    }
+    &__description-6{
+        display: none;
+        bottom: vw(200);
+        right: vw(200);
+        @include for-md(){
+            display: block;
+            bottom: vw3(-200);
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
     &--margin-negatitve{
         margin-top: vw(-100);
     }
@@ -1913,6 +1999,13 @@ header{
 .guides-item{
     position: relative;
     z-index: 2;
+    &__explanation-text{
+        display: none;
+        @include for-md(){
+            display: block;
+            margin-top: vw3(25);
+        }
+    }
     &__value{
         display: block;
        
@@ -2014,7 +2107,7 @@ header{
         top: -16.22917vw;
         right:-3.86146vw ;
         @include for-md(){
-            width: vw3(500);
+            width: vw3(700);
             height: vw3(538);
             right: vw3(-73);
             top: vw3(-600);
@@ -2366,6 +2459,24 @@ header{
 
 
 .test{
+    &__social-mobile{
+        display: none;
+    }
+    &__social{
+        padding-top: vw3(20);
+        .social__list{
+            justify-content: center;
+        }
+        .social__link{
+            height: vw3(60);
+            width: vw3(60);
+
+            svg{
+                height: vw3(25);
+            }
+        }
+      
+    }
   &__inner {
     width: vw(1500);
     margin: 0 auto;
@@ -2630,6 +2741,10 @@ header{
     line-height: vw(34);
     color: #6A489C;
     width: vw(855);
+
+    a{
+        text-decoration: underline;
+    }
 
     &--desktop{
         @include for-md(){
@@ -3497,6 +3612,17 @@ header{
 }
 .hero-food{
     padding-top: vw(160);
+
+    &__description{
+        right: 0;
+        top: vw(800);
+        right: vw(300);
+
+        @include for-md(){
+            top: vw3(600);
+            right: vw3(35)
+        }
+    }
     &__row{
         position: relative;
         
@@ -3593,6 +3719,8 @@ header{
                 top: 0;
                 display: block;
                 margin: 0 auto;
+
+                height: vw3(450);
             }
         }
     }
@@ -4073,4 +4201,22 @@ header{
         position: relative;
         line-height: 0;
      }
+ }
+
+ .description{
+     position: absolute;
+     font-family:$Kiev ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: vw-con(10);
+    line-height:vw-con(13);
+
+
+    color: #AA7E9D;
+
+    @include for-md(){
+        font-size: vw3(14);
+        line-height: vw3(17);
+    }
+
  }

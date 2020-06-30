@@ -39,7 +39,10 @@ $(".header__burger").click(function(){
     }
    
   });
-  
+  $('.test__results .social__link-mobile').click(function(){
+        $(this).next().slideToggle();
+   
+  });
 
  /* test */
 function getMostFrequentElement(inputArg) {
@@ -142,7 +145,7 @@ $(document).ready(function() {
 
         $(".test__swiper-section").swipe( {
             swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-                if (!blocked && distance > 200) {
+                if (!blocked && distance > 200 && (direction == 'left' || direction == 'right')) {
                     blocked = true;
                     var position = 0;
                     if (direction == 'left'){
