@@ -50,12 +50,36 @@
               <img src="img/mobile-menu/text.svg" alt="" class="mobile-menu__image">
               <nav class="mobile-menu__nav">
                 <ul class="mobile-menu__list">
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/health.svg" alt="" class="mobile__link-image"> </a></li>
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/shoping.svg" alt="" class="mobile__link-image"> </a></li>
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/nutrition.svg" alt="" class="mobile__link-image"> </a></li>
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/economy.svg" alt="" class="mobile__link-image"> </a></li>
+                  <li class="mobile-menu__list-item">
+                    <a href="index.html#health-mob" class="mobile__link">
+                    <img src="img/mobile-menu/health.svg" alt="" class="mobile__link-image"> 
+                  </a>
+                </li>
+                  <li class="mobile-menu__list-item"><a href="index.html#shoping-mob" class="mobile__link"><img src="img/mobile-menu/shoping.svg" alt="" class="mobile__link-image"> </a></li>
+                  <li class="mobile-menu__list-item"><a href="index.html#nutrition" class="mobile__link"><img src="img/mobile-menu/nutrition.svg" alt="" class="mobile__link-image"> </a></li>
+                  <li class="mobile-menu__list-item"><a href="test.html" class="mobile__link"><img src="img/mobile-menu/economy.svg" alt="" class="mobile__link-image"> </a></li>
+
                 </ul>
               </nav>
+              <div class="mobile-menu__name">
+                Дифлюкан®
+              </div>
+              <div class="footer__about  footer__about--mobile">
+                <img src="images/phzer.png" alt="" class="footer__about-logo">
+                <p class="footer__about-text">
+                  PP-DIF-RUS-0736   05.06.2020 <br>
+                  ООО «Пфайзер Инновации» <br>
+                  Россия, 123112, Москва, Пресненская наб., д. 10, <br>
+                  БЦ «Башня на Набережной» (Блок С), 22 этаж. <br>
+                  Тел.: +7 (495) 287 50 00. Факс: +7 (495) 287 53 00.
+      
+                </p>
+               
+    
+              </div>
+              <p class="footer-inside__text">
+                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ НЕОБХОДИМО ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ
+              </p>
             </div>
           </div>
         </div>
@@ -63,7 +87,7 @@
        <main class="main">
             <div class="test-hero">
               <div class="container">
-                <img src="img/test-hero-title.svg" alt="" class="test-hero__title">
+                <img src="img/test-hero-title.svg" alt="" class="test-hero__title wow slideInLeft"data-wow-duration="0.6s"data-wow-delay="0">
                 <p class="test-hero__text">
                   Покупать модные вещи в начале сезона или ждать распродаж? Охотиться за промокодами или стойко игнорировать специальные предложения? Посещать врачей по первому чиху или обходиться экономными народными средствами? Что выберете Вы? Пройдите наш тест и узнайте, известны ли Вам все тонкости правильной экономии.
                 </p>
@@ -74,7 +98,7 @@
             <div class="test__inner">
                 <div class="test__question">
                     <div class="test__counter">
-                        <div class="test__counter-current"></div>/<div class="test__counter-total"></div>
+                        <div class="test__counter-current">1</div>/<div class="test__counter-total">9</div>
                     </div>
                     <div class="test__question-test">Будете ждать <span>распродажу</span> или купите вещи в <span>начале сезона</span>?</div>
                 </div>
@@ -99,10 +123,11 @@
                 <div class="test__otvets">
                     <div class="test__status-row">
                         <div class="test__status"></div>
+                        <div class="test__otvet test__otvet--mobile"></div>
                         <div class="test__status-line"></div>
                         <a href="javascript:;" class="test__next-question js-test-next">ДАЛЕЕ</a>
                     </div>
-                    <div class="test__otvet"></div>
+                    <div class="test__otvet test__otvet--desktop"></div>
                 </div>
             </div>
 
@@ -156,6 +181,43 @@
                                        </svg>
                                    </button>
                                </div>
+                               <a  class="social__link-mobile">
+                                 <img src="img/share-modal.svg" alt="">
+                               </a>
+                               <div class="test__social-mobile">
+                                <nav class="social test__social">
+                                  <ul class="social__list ">
+                                    <li class="social__list-item wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0" style="visibility: visible; animation-duration: 0.4s; animation-name: fadeInUp;">
+                                      <a href="#" class="social__link">
+                                        <svg class="social__link-icon">
+                                          <use xlink:href="img/spite.svg#icon-twitter"></use>
+                                        </svg>
+                                      </a>
+                                    </li>
+                                    <li class="social__list-item wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                      <a href="#" class="social__link">
+                                        <svg class="social__link-icon">
+                                          <use xlink:href="img/spite.svg#icon-odn"></use>
+                                        </svg>
+                                      </a>
+                                    </li>
+                                    <li class="social__list-item wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                      <a href="#" class="social__link">
+                                        <svg class="social__link-icon">
+                                          <use xlink:href="img/spite.svg#icon-facebook"></use>
+                                        </svg>
+                                      </a>
+                                    </li>
+                                    <li class="social__list-item wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.6s" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                                      <a href="#" class="social__link">
+                                        <svg class="social__link-icon">
+                                          <use xlink:href="img/spite.svg#icon-vk"></use>
+                                        </svg>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </nav>
+                               </div>
                            </div>
                        </div>
                    </div>
@@ -166,19 +228,36 @@
        <footer class="footer footer--test">
             <div class="container fixed-height">
                 <div class="footer__row">
-                    <img class="footer__decor--test" src="images/footer_test_image.svg" alt="">
-                    <img src="img/footer-img.svg" alt="" class="footer__image--test">
+                    <img class="footer__decor--test wow fadeInLeft" src="images/footer_test_image.svg" alt="" data-wow-duration="0.4s"data-wow-delay="0">
+                    <div class="footer__about footer__about--desktop wow fadeInLeft" data-wow-duration="0.4s"data-wow-delay="0">
+                      <img src="images/phzer.png" alt="" class="footer__about-logo">
+                      <p class="footer__about-text">
+                        PP-DIF-RUS-0736   05.06.2020 <br>
+                        ООО «Пфайзер Инновации» <br>
+                        Россия, 123112, Москва, Пресненская наб., д. 10, <br>
+                        БЦ «Башня на Набережной» (Блок С), 22 этаж. <br>
+                        Тел.: +7 (495) 287 50 00. Факс: +7 (495) 287 53 00.
+        
+                      </p>
+                    </div>
+                    
+                    <img src="img/footer-img.svg" alt="" class="footer__image--test wow fadeInRight" data-wow-duration="0.4s"data-wow-delay="0">
+                    
                 </div>
                 <div class="footer__number">PP-DIF-RUS-0736   05.06.2020</div>
+
+               
             </div>
            <div class="container hided">
                <img src="images/results-left.svg" alt="" class="footer__results-left">
                <img src="images/results-right.svg" alt="" class="footer__results-right">
                <div class="footer__number">PP-DIF-RUS-0736   05.06.2020</div>
-               <p class="footer-inside__text">
-                   ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ НЕОБХОДИМО ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ
-               </p>
+               
            </div>
+           <p class="footer-inside__text">
+            ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ НЕОБХОДИМО ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ
+          </p>
+
        </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

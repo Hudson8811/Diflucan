@@ -16,16 +16,16 @@
             </div>
             <nav class="main-menu header__main-menu">
               <ul class="main-menu__list">
-                <li class="main-menu__list-item"><a href="#" class="main-menu__link">
+                <li class="main-menu__list-item"><a href="#main" class="main-menu__link">
                   Главная
                 </a></li>
-                <li class="main-menu__list-item"><a href="#" class="main-menu__link">
+                <li class="main-menu__list-item"><a href="#shoping" class="main-menu__link">
                   Шопинг
                 </a></li>
-                <li class="main-menu__list-item"><a href="#" class="main-menu__link">
+                <li class="main-menu__list-item"><a href="#nutrition" class="main-menu__link">
                   Питание
                 </a></li>
-                <li class="main-menu__list-item"><a href="#" class="main-menu__link">
+                <li class="main-menu__list-item"><a href="#health" class="main-menu__link">
                   Здоровье
                 </a></li>
                 <li class="main-menu__list-item"><a href="#" class="main-menu__link">
@@ -50,46 +50,72 @@
               <img src="img/mobile-menu/text.svg" alt="" class="mobile-menu__image">
               <nav class="mobile-menu__nav">
                 <ul class="mobile-menu__list">
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/health.svg" alt="" class="mobile__link-image"> </a></li>
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/shoping.svg" alt="" class="mobile__link-image"> </a></li>
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/nutrition.svg" alt="" class="mobile__link-image"> </a></li>
-                  <li class="mobile-menu__list-item"><a href="#" class="mobile__link"><img src="img/mobile-menu/economy.svg" alt="" class="mobile__link-image"> </a></li>
+                  <li class="mobile-menu__list-item">
+                    <a href="#health-mob" class="mobile__link">
+                    <img src="img/mobile-menu/health.svg" alt="" class="mobile__link-image"> 
+                  </a>
+                </li>
+                  <li class="mobile-menu__list-item"><a href="#shoping-mob" class="mobile__link"><img src="img/mobile-menu/shoping.svg" alt="" class="mobile__link-image"> </a></li>
+                  <li class="mobile-menu__list-item"><a href="#nutrition" class="mobile__link"><img src="img/mobile-menu/nutrition.svg" alt="" class="mobile__link-image"> </a></li>
+                  <li class="mobile-menu__list-item"><a href="test.html" class="mobile__link"><img src="img/mobile-menu/economy.svg" alt="" class="mobile__link-image"> </a></li>
+
                 </ul>
               </nav>
+              <div class="mobile-menu__name">
+                Дифлюкан®
+              </div>
+              <div class="footer__about  footer__about--mobile">
+                <img src="images/phzer.png" alt="" class="footer__about-logo">
+                <p class="footer__about-text">
+                  PP-DIF-RUS-0736   05.06.2020 <br>
+                  ООО «Пфайзер Инновации» <br>
+                  Россия, 123112, Москва, Пресненская наб., д. 10, <br>
+                  БЦ «Башня на Набережной» (Блок С), 22 этаж. <br>
+                  Тел.: +7 (495) 287 50 00. Факс: +7 (495) 287 53 00.
+      
+                </p>
+               
+    
+              </div>
+              <p class="footer-inside__text">
+                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ НЕОБХОДИМО ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ
+              </p>
             </div>
           </div>
         </div>
        </header>
-       <main class="main">
+       <main class="main" id="main">
         <div class="hero">
         <div class="container">
-          <img class="hero__image" src="img/Do_not_save.svg" alt="">
-
+          <img class="hero__image wow slideInLeft" src="img/Do_not_save.svg" alt="" data-wow-duration="0.7s">
+          <span  class="hero__scroll">
+            <img src="images/mouse.svg" alt="">
+          </span>
           <div class="hero__row">
-            <nav class="social hero__social">
-              <ul class="social__list">
-                <li class="social__list-item">
+            <nav class="social hero__social" >
+              <ul class="social__list ">
+                <li class="social__list-item wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0">
                   <a href="#" class="social__link">
                     <svg class="social__link-icon">
                       <use xlink:href="img/spite.svg#icon-twitter"  />
                     </svg>
                   </a>
                 </li>
-                <li class="social__list-item">
+                <li class="social__list-item wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.2s">
                   <a href="#" class="social__link">
                     <svg class="social__link-icon">
                       <use xlink:href="img/spite.svg#icon-odn"  />
                     </svg>
                   </a>
                 </li>
-                <li class="social__list-item">
+                <li class="social__list-item wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
                   <a href="#" class="social__link">
                     <svg class="social__link-icon">
                       <use xlink:href="img/spite.svg#icon-facebook"  />
                     </svg>
                   </a>
                 </li>
-                <li class="social__list-item">
+                <li class="social__list-item wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.6s">
                   <a href="#" class="social__link">
                     <svg class="social__link-icon">
                       <use xlink:href="img/spite.svg#icon-vk"  />
@@ -100,53 +126,57 @@
             </nav>
             <img src="img/hero-decor.svg" alt="" class="hero__decor hero__decor--desktop">
             <div class="hero__text-container">
-              <p class="hero__text">
+              <p class="hero__text wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0">
                 Кажется, привычка экономить зашита в нашей ДНК. Промокоды и акции, купоны и скидки, аналоги и дженерики… Мы стараемся оптимизировать расходы – но всегда ли такая экономия оправдана? Не приводит ли она к тому, что, сберегая сиюминутно, мы тратим больше денег, чтобы разобраться 
                 с последствиями?
               </p>
-              <p class="hero__text">    
-                Наш проект, подготовленный совместно с оригинальным препаратом от молочницы Дифлюкан®, поможет вам разобраться в том, что такое правильная и неправильная экономия. Мы расскажем, можно ли действительно тратить меньше денег на питание, одежду и здоровье? На чем может быть по-настоящему опасно экономить? От каких трат можно смело отказаться?
+              <p class="hero__text wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay=".4s">    
+                Наш проект, подготовленный совместно с оригинальным препаратом от молочницы <b>Дифлюкан®</b>, поможет вам разобраться в том, что такое правильная и неправильная экономия. Мы расскажем, можно ли действительно тратить меньше денег на питание, одежду и здоровье? На чем может быть по-настоящему опасно экономить? От каких трат можно смело отказаться?
               </p>
-              <p class="hero__text">
+              <p class="hero__text wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay=".8s">
                 Читайте наши материалы, проходите тест «Умеете ли вы экономить?» 
                 и давайте учиться тратить с умом!
               </p>
+              <div class="explanation-text hero__explanation-text">
+                *Вульвовагинальный кандидоз
+            </div>
             </div>
             <img src="img/mobile-img.svg" alt="" class="hero__decor hero__decor--mobile">
           </div>
+         
         </div>
         </div>
         <!--end hero-->
-        <div class="double-section shoping double-section--desktop">
-          <img src="img/shoping-img.png" alt="" class="shoping__image">
+        <div class="double-section shoping double-section--desktop" id="shoping">
+          <img src="img/shoping-img.png" alt="" class="shoping__image wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0">
           <div class="container">
            
             <div class="double-section__title double-section__title--right">
-              <img class="double-section__title-image" src="img/shoping.svg" alt="">
+              <img class="double-section__title-image wow slideInRight" src="img/shoping.svg" alt="" data-wow-duration="0.4s" data-wow-delay="0">
             </div>
             <div class="double-section__row double-section__row--mt-medium">
-              <div class="double-section__item-container">
+              <div class="double-section__item-container wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0">
                 <div class="double-section__item">
                   <p class="double-section__text">
                     <i>Как</i> можно <i>сэкономить</i> на распродажах?
                   </p>
                 </div>
               </div>
-              <div class="double-section__item-container">
+              <div class="double-section__item-container wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.2s">
                 <div class="double-section__item">
                   <p class="double-section__text">
                     <i>Советы</i> от шопоголика 
                   </p>
                 </div>
               </div>
-              <div class="double-section__item-container">
+              <div class="double-section__item-container wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.4s">
                 <div class="double-section__item">
                   <p class="double-section__text">
                     <i>Нужно</i> ли покупать <i>в сэконд-хэндах</i>?
                   </p>
                 </div>
               </div>
-              <div class="double-section__item-container">
+              <div class="double-section__item-container wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.6s">
                 <div class="double-section__item">
                   <p class="double-section__text">
                     Умный  <br>
@@ -160,37 +190,41 @@
         </div>
         <!--end shoping-->
 
-        <div class="double-section health double-section--mobile">
+        <div class="double-section health double-section--mobile" id="health-mob">
           <img class="health__image health__image--desktop" src="img/health-image.png" alt="" >
+          <p class="description health__description">
+            Лица, изображенные на сайте, не являеются реальными <br> врачами, фармацевтами, пациентами.
+          </p>
           <div class="container">
             
             <img class="health__image health__image--mobile" src="img/health-image-mobile.png" alt="" >
+            
             <div class="double-section__title double-section__title--right-padding">
-              <img class="double-section__title-image" src="img/health.svg" alt="">
+              <img class="double-section__title-image wow slideInLeft" src="img/health.svg" alt="" data-wow-duration="0.4s" data-wow-delay="0">
             </div>
             <div class="double-section__row double-section__row--mt-medium-big">
-              <div class="double-section__item-container">
+              <div class="double-section__item-container wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0">
                 <div class="double-section__item">
                   <p class="double-section__text">
                     <i>Что</i> такое оригинал и <i>дженерик</i> 
                   </p>
                 </div>
               </div>
-              <div class="double-section__item-container">
+              <div class="double-section__item-container wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.2s">
                 <div class="double-section__item">
                   <p class="double-section__text">
-                    X <i>причин</i> покупать <i>оригинальный</i> препарат 
+                    3 <i>причины</i> покупать <i>оригинальный</i> препарат 
                   </p>
                 </div>
               </div>
-              <div class="double-section__item-container">
+              <div class="double-section__item-container wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.4s">
                 <div class="double-section__item">
                   <p class="double-section__text">
                     Можно ли <i>экономить</i> на <i>здоровье</i>? 
                   </p>
                 </div>
               </div>
-              <div class="double-section__item-container">
+              <div class="double-section__item-container wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.6s">
                 <div class="double-section__item">
                   <p class="double-section__text">
                     <i>   3 причины </i>
@@ -205,7 +239,7 @@
         </div>
         <!--end health-->
 
-        <div class="double-section shoping double-section--mobile">
+        <div class="double-section shoping double-section--mobile" id="shoping-mob">
           <img src="img/shoping-img.png" alt="" class="shoping__image shoping__image--desktop">
           <div class="container">
             <img src="img/shoping-img-mobile.png" alt="" class="shoping__image shoping__image--mobile">
@@ -247,16 +281,19 @@
           </div>
         </div>
         <!--end shoping-->
-        <div class="double-section nutrition">
-          <img  class="nutrition__image nutrition__image--desktop" src="img/nutrition-img.png" alt="">
+        <div class="double-section nutrition" id="nutrition">
+          <p class="description nutrition__description">
+            Лица, изображенные на сайте, не являеются реальными <br> врачами, фармацевтами, пациентами.
+          </p>
+          <img  class="nutrition__image nutrition__image--desktop wow fadeInLeft" src="img/nutrition-img.png" alt="" data-wow-duration="0.4s" data-wow-delay="0">
           <div class="container">
-            <img  class="nutrition__image nutrition__image--mobile" src="img/nutrition-img-mobile.png" alt="">
+            <img  class="nutrition__image nutrition__image--mobile " src="img/nutrition-img-mobile.png" alt="" >
             <div class="double-section__title double-section__title--left">
-              <img class="double-section__title-image" src="img/nutrition.svg" alt="">
+              <img class="double-section__title-image wow slideInLeft" src="img/nutrition.svg" alt="" data-wow-duration="0.4s" data-wow-delay="0">
             </div>
             <div class="double-section__row double-section__row--mt-big">
               <div class="double-section__item-container">
-                <div class="double-section__item">
+                <div class="double-section__item wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0">
                   <p class="double-section__text">
                    <i> 5 продуктов,</i> на которых 
                    <i> не стоит</i> экономить 
@@ -264,21 +301,21 @@
                 </div>
               </div>
               <div class="double-section__item-container">
-                <div class="double-section__item">
+                <div class="double-section__item wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.2s">
                   <p class="double-section__text">
                     <i>Советы</i> по питанию для поддержания <i>интимного здоровья</i>
                   </p>
                 </div>
               </div>
               <div class="double-section__item-container">
-                <div class="double-section__item">
+                <div class="double-section__item wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.4s">
                   <p class="double-section__text">
                    <i> Какие продукты</i> помогают <i>сохранить красоту</i> и здоровье
                   </p>
                 </div>
               </div>
               <div class="double-section__item-container">
-                <div class="double-section__item">
+                <div class="double-section__item wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.6s">
                   <p class="double-section__text">
                     Неочевидные <i>лайфхаки</i> экономных закупок 
                   </p>
@@ -288,36 +325,39 @@
           </div>
         </div>
         <!--end nutrition-->
-        <div class="double-section health double-section--desktop">
-          <img class="health__image" src="img/health-image.png" alt="" >
+        <div class="double-section health double-section--desktop" id="health">
+          <p class="description health__description">
+            Лица, изображенные на сайте, не являеются реальными <br> врачами, фармацевтами, пациентами.
+          </p>
+          <img class="health__image wow fadeInLeft" src="img/health-image.png" alt="" data-wow-duration="0.4s" data-wow-delay="0">
           <div class="container">
             <div class="double-section__title double-section__title--right-padding">
-              <img class="double-section__title-image" src="img/health.svg" alt="">
+              <img class="double-section__title-image wow slideInRight" src="img/health.svg" alt="" data-wow-duration="0.4s" data-wow-delay="0">
             </div>
             <div class="double-section__row double-section__row--mt-medium-big">
               <div class="double-section__item-container">
-                <div class="double-section__item">
+                <div class="double-section__item wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0">
                   <p class="double-section__text">
                     Что такое оригинал и <i>дженерик</i> 
                   </p>
                 </div>
               </div>
               <div class="double-section__item-container">
-                <div class="double-section__item">
-                  <p class="double-section__text">
-                    X <i>причин</i> покупать <i>оригинальный</i> препарат 
+                <div class="double-section__item wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.2s">
+                  <p class="double-section__text" >
+                    3 <i>причины</i> покупать <i>оригинальный</i> препарат 
                   </p>
                 </div>
               </div>
               <div class="double-section__item-container">
-                <div class="double-section__item">
+                <div class="double-section__item wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.4s">
                   <p class="double-section__text">
                     Можно ли <i>экономить</i> на <i>здоровье</i>? 
                   </p>
                 </div>
               </div>
               <div class="double-section__item-container">
-                <div class="double-section__item">
+                <div class="double-section__item wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.6s">
                   <p class="double-section__text">
                     <i>   3 причины </i>
                     не затягивать
@@ -331,22 +371,53 @@
         </div>
         <!--end health-->
        </main>
-       <footer class="footer">
+       <footer class="footer footer-index">
         <div class="container">
-          <a href="#" class="footer__link footer__link--border footer__link--center footer__link--desktop">
-            <img class="footer__link-text" src="img/footer-text.svg" alt="" >
-            <img src="img/footer-img.svg" alt="" class="footer__image">
-            <span class="button">
-              ПРЯМО СЕЙЧАС
-            </span>
-          </a>
-          <a href="#" class="footer__link footer__link--right footer__link--mobile">
-            <img src="img/mobile-img.svg" alt="">
-          </a>
+          <div class="explanation-text footer-index__explanation-text">
+            *Вульвовагинальный кандидоз
+        </div>
+         <div class="footer__row">
+          <div class="footer__about footer__about--abs footer__about--desktop">
+            <img src="images/phzer.png" alt="" class="footer__about-logo">
+            <p class="footer__about-text">
+              PP-DIF-RUS-0736   05.06.2020 <br>
+              ООО «Пфайзер Инновации» <br>
+              Россия, 123112, Москва, Пресненская наб., д. 10, <br>
+              БЦ «Башня на Набережной» (Блок С), 22 этаж. <br>
+              Тел.: +7 (495) 287 50 00. Факс: +7 (495) 287 53 00.
+
+            </p>
+          </div>
+          <div class="footer__about  footer__about--mobile footer__about--row">
+            <img src="images/phzer.png" alt="" class="footer__about-logo">
+            <p class="footer__about-text">
+              PP-DIF-RUS-0736   05.06.2020 <br>
+              ООО «Пфайзер Инновации» <br>
+              Россия, 123112, Москва, Пресненская наб., д. 10, <br>
+              БЦ «Башня на Набережной» (Блок С), 22 этаж. <br>
+              Тел.: +7 (495) 287 50 00. Факс: +7 (495) 287 53 00.
+
+            </p>
+          </div>
+        <a href="#" class="footer__link footer__link--border footer__link--center footer__link--desktop wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0">
+          <img class="footer__link-text" src="img/footer-text.svg" alt="" >
+          <img src="img/footer-img.svg" alt="" class="footer__image">
+          <span class="button">
+            ПРЯМО СЕЙЧАС
+          </span>
+        </a>
+        <a href="#" class="footer__link footer__link--right footer__link--mobile">
+          <img src="img/mobile-img.svg" alt="">
+        </a>
+         </div>
+         <p class="footer__text">
+          ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ НЕОБХОДИМО ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ
+         </p>
         </div>
        </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

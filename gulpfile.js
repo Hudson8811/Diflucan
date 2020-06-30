@@ -28,7 +28,7 @@ gulp.task('scss', function(){
 gulp.task('css', function(){
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
-    'assest/css/swiper.css',
+    'assest/css/animate.css',
   ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/scss'))
@@ -48,6 +48,7 @@ gulp.task('script', function(){
 gulp.task('js', function(){
   return gulp.src([
     'assest/js/jquery.touchSwipe.min.js',
+    'assest/js/wow.min.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

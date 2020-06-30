@@ -1,8 +1,48 @@
+
+    
+  
+  
+  $(function(){
+    $('a[href^="#"]').on('click', function(event) {
+      // отменяем стандартное действие
+      event.preventDefault();
+      
+      var sc = $(this).attr("href"),
+          dn = $(sc).offset().top;
+      /*
+      * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+      * dn - определяем положение блока на странице
+      */
+      
+      $('html, body').animate({scrollTop: dn}, 1000);
+      
+      /*
+      * 1000 скорость перехода в миллисекундах
+      */
+    });
+  });
+
+
 $(".header__burger").click(function(){
    $(this).toggleClass("active");
    $(".mobile-menu").slideToggle();
   });
 
+
+  $('.mobile__link').click(function(){
+    var windowSize = $(window).width(); 
+    if(windowSize < 1025){
+      // $(".header__menu").slideToggle(300);
+      $(".mobile-menu").slideToggle();
+      $(".burger").removeClass("active");
+      
+    }
+   
+  });
+  $('.test__results .social__link-mobile').click(function(){
+        $(this).next().slideToggle();
+   
+  });
 
  /* test */
 function getMostFrequentElement(inputArg) {
@@ -194,3 +234,7 @@ $(document).ready(function() {
 
  
  
+var wow = new WOW({
+    offset:       150, 
+});
+new WOW().init();

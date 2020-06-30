@@ -2,12 +2,15 @@ $white:#fff;
 $black:#000;
 $purple:#860064;
 $purple2:#6A489C;
+$light-purple: #AA7E9D;
 $pink:#ED057D;
 $resolution: 1920;
 $resolution2: 320;
+$resolution3:669;
 $Coco:'Cocosignum Maiuscoletto', sans-serif;
 $MyRiad:'Myriad Pro', sans-serif;
 $EB:'EB Garamond', serif;
+$Kiev:  'KievitPro',sans-serif;
 
 $breakpoints: (
         lg: 1920,
@@ -16,11 +19,16 @@ $breakpoints: (
 ) !default;
 $media-direction: max !default;
 @function vw($px) {
-  @return (($px/$resolution) * 100)+vw;
+  @return (($px/$resolution) * 100) * 0.7 + vw;
 }
-
+@function vw-con($px) {
+  @return (($px/$resolution) * 100)  + vw;
+}
 @function vw2($px) {
   @return (($px/$resolution2) * 100)+vw;
+}
+@function vw3($px) {
+  @return (($px/$resolution3) * 100)+vw;
 }
 @mixin for-xl {
     @media (max-width: 1300px) { @content; }
