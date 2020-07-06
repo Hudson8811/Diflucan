@@ -86,33 +86,33 @@ header{
     display: inline-block;
     height: vw2(6);
     border-radius: vw2(20);
-  
+
     transition: transform 500ms;
     width: vw2(31);
   }
-  
+
   .rect+.rect{margin-top: vw2(3);}
-  
+
   .rect:nth-child(2) {
     transition-delay: 100ms;
-  
+
   }
-  
+
   .rect:nth-child(3) {
     transition-delay: 100ms;
   }
-  
+
   .burger.active .rect:nth-child(1) {
     transform: rotate(-45deg) translateX(-5px) translateY(5px);
     opacity:0;
     background-color: $white;
   }
-  
+
   .burger.active .rect:nth-child(2) {
     transform: rotate(45deg);
     background-color: $white;
   }
-  
+
   .burger.active .rect:nth-child(3) {
     transform: rotate(-45deg) translateX(vw2(6)) translateY(vw2(-6));
     background-color: $white;
@@ -123,7 +123,7 @@ header{
     display: flex;
     flex-direction: column;
     height: 100%;
-    
+
 }
 .container{
     position: relative;
@@ -146,7 +146,7 @@ header{
     @include for-md(){
         padding: vw2(20) 0;
     }
-    
+
 
     &:before{
         content: '';
@@ -204,7 +204,7 @@ header{
 
     }
     @include for-md(){
-      
+
         position: absolute;
         left: 0;
         top: vw2(-20);
@@ -329,7 +329,7 @@ header{
             animation-play-state: paused;
         }
 
-        
+
     }
 
     &:after{
@@ -362,11 +362,11 @@ header{
         margin-bottom: vw(76);
 
         @include for-md(){
-        
+
             margin-bottom: vw(85);
         }
 
-       
+
 
     }
     &__row{
@@ -424,7 +424,7 @@ header{
     &__text{
         font-weight: 300;
 
-        
+
 
         & + &{
             margin-top: vw(34);
@@ -614,7 +614,7 @@ header{
             }
         }
         &--desktop{
-           
+
             @include for-md(){
                 display: none;
             }
@@ -679,7 +679,7 @@ header{
             top: auto;
             right: auto;
             margin: 0 auto;
-           
+
             max-width: 100%;
             width: 100%;
             height: vw2(250);
@@ -723,7 +723,7 @@ header{
             background-image: url(../img/health-decor-mobile.png);
             height: vw2(500);
         }
-        
+
     }
     &__image{
         position: absolute;
@@ -763,10 +763,10 @@ header{
     background: url(../img/footer-bg-desktop.png) no-repeat center 0;
     background-size: cover;
 
-   
+
     &__about{
         margin-top: vw(62);
-       
+
         align-items: flex-start;
 
         &--desktop{
@@ -857,7 +857,7 @@ header{
 
             .footer__row{
                 flex-wrap: wrap;
-                
+
             }
 
             .promo-hero__left{
@@ -900,7 +900,7 @@ header{
         padding-top: vw(270);
         margin-top: vw(-300);
         z-index: -1;
-        
+
         position: relative;
 
         .footer-inside__text{
@@ -1307,7 +1307,7 @@ header{
             }
         }
 
-       
+
 
         & + &{
             margin-top: vw(165);
@@ -1429,7 +1429,7 @@ header{
                 }
             }
          }
-        
+
         &--2{
             &:before{
                 @include for-md(){
@@ -1462,14 +1462,14 @@ header{
                  @include for-md(){
                      bottom: 137%;
                      right: vw2(30);
-                    
+
                  }
 
-                 
+
              }
 
              &:before{
-                 
+
                 @include for-md(){
                     content: '';
                     position: absolute;
@@ -1541,10 +1541,10 @@ header{
             }
         }
 
-       
+
     }
 
-   
+
 }
 
 .footer-inside{
@@ -1593,7 +1593,7 @@ header{
         box-sizing: border-box;
         max-width: vw(900);
         width: 100%;
-        
+
         @include for-md(){
             padding-left: 0;
             max-width: 100%;
@@ -1739,7 +1739,7 @@ header{
         }
     }
     &__description-5{
-       
+
         bottom: vw(200);
         right: vw(200);
         @include for-md(){
@@ -1767,7 +1767,7 @@ header{
     @include for-md(){
         margin-top: vw2(30);
         padding-top: vw2(40);
-      
+
     }
 
     @include for-sm(){
@@ -1775,7 +1775,7 @@ header{
         background-position: center vw2(1600);
     }
 
-    
+
     .container{
         overflow: visible;
     }
@@ -1804,7 +1804,7 @@ header{
             width: 100%;
             bottom: vw2(2700);
         }
-        
+
 
         @include for-lit-md(){
             bottom: vw2(2600) !important;
@@ -1813,8 +1813,8 @@ header{
         @include for-sm(){
             background-size: contain;
             bottom: vw2(2800) !important;
-            
-            
+
+
         }
 
         @include for-tiny-tablet(){
@@ -1877,7 +1877,7 @@ header{
         top: vw(-770);
 
         @include for-md(){
-          
+
             height: vw3(560);
             width: vw3(700);
             top: vw3(-628);
@@ -1939,7 +1939,7 @@ header{
                 order: 1;
             }
         }
-        
+
         &--negative-margin{
             margin-top: vw(-183);
         }
@@ -1949,7 +1949,7 @@ header{
                 margin-top: 0;
             }
         }
-      
+
 
         &--big-margin{
             margin-top: vw(228);
@@ -1975,16 +1975,16 @@ header{
                 margin-top: vw2(350);
             }
         }
-        
+
         &--with-decor{
-         
+
             padding-top: vw(415);
             @include for-md(){
                 padding-top: 0;
                 order: 1;
             }
 
-            
+
         }
         &--big-padding{
             padding-top: vw(680);
@@ -1996,9 +1996,9 @@ header{
             width: 100%;
             margin-right: 0;
         }
-        
+
     }
-    
+
 }
 .guides-item{
     position: relative;
@@ -2012,8 +2012,8 @@ header{
     }
     &__value{
         display: block;
-       
-        
+
+
     }
 
     &--mobile-decor{
@@ -2031,7 +2031,7 @@ header{
                 left: vw2(-23);
                 background: url(../img/guiides-container-img-mobile.png) left center no-repeat;
                 background-size: contain;
-    
+
             }
         }
     }
@@ -2052,7 +2052,7 @@ header{
     }
     &__value{
         height: 100%;
-       
+
         margin: 0 auto;
     }
     &__title{
@@ -2460,8 +2460,50 @@ header{
 @function vw($px) {
   @return (($px/1920) * 100) * 0.7 +vw;
 }
+.text-after-img{
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: vw(23);
+    line-height: vw(30);
+    text-align: center;
 
+    color: #AA7E9D;
+    margin-top: 1.5vw;
+    @media screen and (max-width: 1290px){
 
+    font-size: 13px;
+    line-height: 1.2;
+    padding: 0 15px;
+    }
+}
+@media screen and (max-width: 600px){
+    .footer__decor--test {
+        display: none;
+    }
+    .test__left .img, .test__right .img{
+        position: relative;
+    }
+
+    .text-after-img{
+        position: absolute;
+            font-size: 3vw;
+            line-height: 1.2;
+            top: 52vw;
+
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .test__info-mob{
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px){
+    .test__info-desk{
+        display: none;
+    }
+}
 .test{
     &__social-mobile{
         display: none;
@@ -2479,7 +2521,7 @@ header{
                 height: vw3(25);
             }
         }
-      
+
     }
   &__inner {
     width: vw(1500);
@@ -2489,7 +2531,7 @@ header{
         width: 100%;
     }
   }
-  
+
   &__question{
     display: flex;
     padding-left: vw(300);
@@ -2566,6 +2608,8 @@ header{
       display: flex;
       align-items: center;
       max-width: 100%;
+      flex-direction: column;
+      justify-content: center;
     }
     &.like{
       .img{
@@ -2642,15 +2686,27 @@ header{
 
     @include for-md(){
         top: auto;
-        bottom: 0;
+        bottom: 23vw;
         font-size: vw2(6.5);
         line-height: vw2(7);
         margin-bottom: vw2(-30);
     }
+
+    @media screen and (max-width: 610px){
+
+    bottom: 23vw;
+    font-size: 2.8vw;
+    line-height: 1.1;
+    margin-bottom: -9.375vw;
+    }
+    @media screen and (max-width: 450px){
+        bottom: 17vw;
+        font-size: 3.4vw;
+    }
   }
 
   &__otvets{
-    
+
     display: none;
     width: vw(980);
     margin: vw(35) auto 0;
@@ -2661,9 +2717,9 @@ header{
       display: block;
     }
 
-   
 
-    
+
+
 
     @include for-md(){
         position: fixed;
@@ -2953,7 +3009,7 @@ header{
     }
     &__row{
         position: relative;
-        
+
     }
     &__left{
         width: vw-con(800);
@@ -2965,7 +3021,7 @@ header{
         // @include for-tiny-tablet{
         //     padding: 0 15px;
         // }
-        
+
     }
     h2{
         font-size: vw(122);
@@ -3180,14 +3236,14 @@ header{
             }
         }
     }
-    
+
 }
 .health-questions{
     position: relative;
     padding-top: vw(212);
     @include for-md{
         padding: vw3(70) vw3(30) 0;
-    } 
+    }
     &--no-padding{
         padding-top: 0;
     }
@@ -3230,11 +3286,11 @@ header{
             @include for-md{
                 width: 100%;
                 padding-right: 0;
-            } 
+            }
         }
         @include for-md{
             width: 100%;
-        } 
+        }
     }
     &__item + &__item{
         @include for-md{
@@ -3246,13 +3302,13 @@ header{
     }
     &__row{
         display: flex;
-        padding-left: vw(100);     
-        flex-wrap: wrap; 
+        padding-left: vw(100);
+        flex-wrap: wrap;
         justify-content: space-between;
         @include for-md{
             flex-direction: column;
             padding: 0;
-        }  
+        }
     }
     &__list{
         padding: 0;
@@ -3293,7 +3349,7 @@ header{
         @include for-md{
             margin-top: vw3(10);
         }
-        
+
     }
 
     &__item-list{
@@ -3326,7 +3382,7 @@ header{
         }
         &--2{
 
-          
+
             &:before{
                 content: '';
                 position: absolute;
@@ -3338,7 +3394,7 @@ header{
                 background-size: contain;
                 z-index: -1;
 
-              
+
 
                 @include for-md(){
                     width: 100%;
@@ -3413,7 +3469,7 @@ header{
             &:before{
                 content: "•";
                 margin: 0 vw(10);
-                
+
             }
         }
         li + li{
@@ -3462,7 +3518,7 @@ header{
             margin-bottom: vw3(20);
             font-size: vw3(100);
             line-height: vw3(92);
-        } 
+        }
     }
     &__text-container{
         margin-top: vw(35);
@@ -3545,7 +3601,7 @@ header{
         }
     }
 
-    
+
     @include for-md{
         padding: vw3(100) vw3(30) 0;
     }
@@ -3619,14 +3675,14 @@ header{
             margin: 0 auto;
         }
     }
-    
+
 }
 .explanation-text{
     font-size: vw(14);
     line-height: vw(17);
     color: $light-purple;
     a{
-        color: $light-purple; 
+        color: $light-purple;
         &:hover{
             text-decoration: underline;
         }
@@ -3634,9 +3690,9 @@ header{
     @include for-md(){
         font-size: vw3(20);
         line-height: vw3(25);
-        
+
     }
-    
+
 }
 .hero-food{
     padding-top: vw(160);
@@ -3653,7 +3709,7 @@ header{
     }
     &__row{
         position: relative;
-        
+
     }
     &__left{
         width: 43%;
@@ -3665,7 +3721,7 @@ header{
         // @include for-tiny-tablet{
         //     padding: 0 vw3(15);
         // }
-        
+
     }
     &__subtitle{
         margin-top: vw(20);
@@ -3758,7 +3814,7 @@ header{
     padding-top: vw(312);
     @include for-md{
         padding: vw3(70) vw3(30) 0;
-    } 
+    }
     // @include for-tiny-tablet{
     //     padding: 40px 15px 0;
     // }
@@ -3780,7 +3836,7 @@ header{
            left: 0;
         }
 
-        
+
     }
     &__img{
         margin-top: vw-con(10);
@@ -3797,7 +3853,7 @@ header{
             background-size: contain;
         }
     }
-    
+
     &__content{
         box-sizing: border-box;
 
@@ -3814,7 +3870,7 @@ header{
         }
 
         p{
-            
+
             font-weight: 300;
         }
         p+ p{
@@ -3853,14 +3909,14 @@ header{
             @include for-md{
                 width: 100%;
                 padding-right: 0;
-            } 
+            }
         }
         &--w50{
             width: 50%;
         }
         @include for-md{
             width: 100%;
-        } 
+        }
     }
     &__item + &__item{
         @include for-md{
@@ -3872,11 +3928,11 @@ header{
     }
     &__row{
         display: flex;
-        padding-left: vw(100);      
+        padding-left: vw(100);
         @include for-md{
             flex-direction: column;
             padding: 0;
-        }  
+        }
     }
     &__list{
         padding: 0;
@@ -3920,7 +3976,7 @@ header{
             // }
             // @include for-tiny-mob{
             //     font-size: 20px;
-                
+
             // }
         }
         &::before{
@@ -3945,7 +4001,7 @@ header{
         @include for-md{
             margin-top: vw3(10);
         }
-        
+
     }
     &__title{
         font-size: vw(144);
@@ -3967,7 +4023,7 @@ header{
             br{
                 display: none;
             }
-        } 
+        }
         // @include for-tiny-tablet{
         //     margin-bottom: 10px;
         //     font-size: 54px;
@@ -4016,7 +4072,7 @@ header{
 
     @include for-md(){
        background-position: center vw3(2500);
-        
+
     }
     .container{
         overflow: visible;
@@ -4168,7 +4224,7 @@ header{
                 background-size: contain;
 
                 @include for-md(){
-                  
+
                     height: vw3(718);
                     width: 130%;
                     right: vw3(-48);
@@ -4196,7 +4252,7 @@ header{
                 margin: vw3(62) auto 0;
             }
         }
-        
+
     }
     &__link{
         color: $pink;

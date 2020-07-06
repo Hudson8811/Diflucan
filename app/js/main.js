@@ -1,21 +1,21 @@
 
-    
-  
-  
+
+
+
   $(function(){
     $('a[href^="#"]').on('click', function(event) {
       // отменяем стандартное действие
       event.preventDefault();
-      
+
       var sc = $(this).attr("href"),
           dn = $(sc).offset().top;
       /*
       * sc - в переменную заносим информацию о том, к какому блоку надо перейти
       * dn - определяем положение блока на странице
       */
-      
+
       $('html, body').animate({scrollTop: dn}, 1000);
-      
+
       /*
       * 1000 скорость перехода в миллисекундах
       */
@@ -30,18 +30,18 @@ $(".header__burger").click(function(){
 
 
   $('.mobile__link').click(function(){
-    var windowSize = $(window).width(); 
+    var windowSize = $(window).width();
     if(windowSize < 1025){
       // $(".header__menu").slideToggle(300);
       $(".mobile-menu").slideToggle();
       $(".burger").removeClass("active");
-      
+
     }
-   
+
   });
   $('.test__results .social__link-mobile').click(function(){
         $(this).next().slideToggle();
-   
+
   });
 
  /* test */
@@ -82,10 +82,15 @@ function setQuest(currentQuestion,quests){
     var right = quests.test[currentQuestion-1].variants[1].img;
     var vopros = quests.test[currentQuestion-1].vopros;
 
+    var leftTxt = quests.test[currentQuestion-1].variants[0].textAfterImg?'<span>'+quests.test[currentQuestion-1].variants[0].textAfterImg+'</span>':'';
+    var rightTxt = quests.test[currentQuestion-1].variants[1].textAfterImg?'<span>'+quests.test[currentQuestion-1].variants[1].textAfterImg+'</span>':'';
+
     $('.test__counter-current').html(currentQuestion);
     $('.test__question-test').html(vopros);
     $('.test__left img').attr('src',left);
     $('.test__right img').attr('src',right);
+    $('.text-after-img--left').html(leftTxt);
+    $('.text-after-img--right').html(rightTxt);
 
     $('.test__left,.test__right').removeClass('like dislike');
     $('.test__otvets').removeClass('active');
@@ -223,18 +228,18 @@ $(document).ready(function() {
     }
 });
 
- 
- 
 
 
- 
-
- 
 
 
- 
- 
+
+
+
+
+
+
+
 var wow = new WOW({
-    offset:       150, 
+    offset:       150,
 });
 new WOW().init();
