@@ -4304,3 +4304,21 @@ header{
     }
 
  }
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .test__counter{
+        flex-shrink: 0;
+    }
+    .test__left .img, .test__right .img{
+        width: 100%;
+    }
+    .test__left img, .test__right img{
+        flex-shrink: 0;
+    }
+    .test__right{
+        order: 1;
+    }
+}
